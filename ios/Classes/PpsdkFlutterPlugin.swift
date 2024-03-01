@@ -9,11 +9,16 @@ public class PpsdkFlutterPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    switch call.method {
-    case "getPlatformVersion":
-      result("iOS " + UIDevice.current.systemVersion)
-    default:
+    if let method = call.method, method == "callProfilePassportSDK" {
+      result(true)
+    }else{
       result(FlutterMethodNotImplemented)
     }
+    // switch call.method {
+    // case "getPlatformVersion":
+    //   result("iOS " + UIDevice.current.systemVersion)
+    // default:
+    //   result(FlutterMethodNotImplemented)
+    // }
   }
 }
