@@ -16,7 +16,32 @@ class MethodChannelPpsdkFlutter extends PpsdkFlutterPlatform {
     return version;
   }
 
-  Future<void> callProfilePassportSDK() async {
-    await methodChannel.invokeMethod<String>('callProfilePassportSDK');
+  Future<void> startSDK(Map<String, dynamic> option) async {
+    await methodChannel.invokeMethod<String>('startPPSDK', option);
+  }
+
+  Future<void> serviceStop() async {
+    await methodChannel.invokeMethod<String>('serviceStop');
+  }
+
+  Future<void> setGeoServiceEnabled(bool isEnabled) async {
+    await methodChannel.invokeMethod<String>('setGeoServiceEnabled', isEnabled);
+  }
+
+  Future<void> updateLocationAndCheckIn() async {
+    await methodChannel.invokeMethod<String>('updateLocationAndCheckIn');
+  }
+
+  Future<void> setBeaconServiceEnabled(bool isEnabled) async {
+    await methodChannel.invokeMethod<String>(
+        'setBeaconServiceEnabled', isEnabled);
+  }
+
+  Future<void> getBeaconServiceEnabled() async {
+    await methodChannel.invokeMethod<String>('getBeaconServiceEnabled');
+  }
+
+  Future<String> getPPUID() async {
+    return await methodChannel.invokeMethod('getPPUID');
   }
 }
