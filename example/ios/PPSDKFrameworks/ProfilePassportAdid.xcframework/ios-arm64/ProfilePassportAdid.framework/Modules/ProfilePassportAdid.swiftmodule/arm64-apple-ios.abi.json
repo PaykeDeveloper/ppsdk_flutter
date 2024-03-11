@@ -1,0 +1,843 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ProfilePassportCore",
+        "printedName": "ProfilePassportCore",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid"
+      },
+      {
+        "kind": "Import",
+        "name": "ProfilePassportCore",
+        "printedName": "ProfilePassportCore",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid"
+      },
+      {
+        "kind": "Import",
+        "name": "ProfilePassportCore",
+        "printedName": "ProfilePassportCore",
+        "declKind": "Import",
+        "moduleName": "ProfilePassportAdid"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 180,
+      "length": 35,
+      "value": "\"profilePassport-debugLog-adid.txt\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 290,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 821,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 1412,
+      "length": 18,
+      "value": "\"LOG_METHOD_START\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 2017,
+      "length": 16,
+      "value": "\"LOG_METHOD_END\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4570,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 4658,
+      "length": 33,
+      "value": "\"APLog.log can not get file url.\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5108,
+      "length": 38,
+      "value": "\"APLog.log can not create fileHandle.\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5329,
+      "length": 46,
+      "value": "\"APLog.log can not create fileHandle.\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5374,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5585,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5689,
+      "length": 51,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5730,
+      "length": 7,
+      "value": "1048576"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5739,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5766,
+      "length": 52,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5808,
+      "length": 7,
+      "value": "1048576"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5817,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5843,
+      "length": 32,
+      "value": "\"M=\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5858,
+      "length": 1,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5872,
+      "length": 2,
+      "value": "\"MB\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5898,
+      "length": 64,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5907,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5923,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5926,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5939,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5947,
+      "length": 1,
+      "value": "\"] \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 5959,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 6126,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6163,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 6288,
+      "length": 48,
+      "value": "\"APLog.getAllLogStr Unexpected error: \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 6334,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 6676,
+      "length": 48,
+      "value": "\"APLog.getAllLogStr Unexpected error: \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 6722,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6972,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7162,
+      "length": 19,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7180,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7234,
+      "length": 13,
+      "value": "\"<NSThread: \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7255,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7315,
+      "length": 18,
+      "value": "\"<_NSMainThread: \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7341,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7402,
+      "length": 13,
+      "value": "\">{number = \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7423,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7485,
+      "length": 11,
+      "value": "\", name = \""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7504,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7566,
+      "length": 8,
+      "value": "\"(null)\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7582,
+      "length": 6,
+      "value": "\"null\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7647,
+      "length": 3,
+      "value": "\"}\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "StringLiteral",
+      "offset": 7658,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7911,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8051,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8255,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8845,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9092,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3ALog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9167,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidLibrary.swift",
+      "kind": "StringLiteral",
+      "offset": 615,
+      "length": 15,
+      "value": "\"PPSDK_VERSION\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidLibrary.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1677,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidLibrary.swift",
+      "kind": "StringLiteral",
+      "offset": 1818,
+      "length": 29,
+      "value": "\"permission status:\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidLibrary.swift",
+      "kind": "StringLiteral",
+      "offset": 1846,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1332,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1396,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1430,
+      "length": 35,
+      "value": "\"isWork:\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1464,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1687,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1738,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1842,
+      "length": 32,
+      "value": "\"NSUserTrackingUsageDescription\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1905,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1936,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1942,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2110,
+      "length": 20,
+      "value": "\"state: not active.\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2225,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2351,
+      "length": 31,
+      "value": "\"AuthorizationStatus:\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2381,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 2711,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2781,
+      "length": 36,
+      "value": "\"Not NSUserTrackingUsageDescription\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "Array",
+      "offset": 3050,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3086,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3131,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3186,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3191,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3196,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3242,
+      "length": 20,
+      "value": "\"adid_last_get_time\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3879,
+      "length": 10,
+      "value": "\"not work\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4035,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 4102,
+      "length": 6,
+      "value": "1000.0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4154,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4184,
+      "length": 14,
+      "value": "\"first update\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4324,
+      "length": 28,
+      "value": "\"debug.adid_update_interval\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4468,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4550,
+      "length": 15,
+      "value": "\"cannot update\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4649,
+      "length": 8,
+      "value": "\"update\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5338,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5381,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5758,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5963,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6004,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6067,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6123,
+      "length": 32,
+      "value": "\"trackingState:\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6154,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6389,
+      "length": 38,
+      "value": "\"00000000-0000-0000-0000-000000000000\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6460,
+      "length": 18,
+      "value": "\"adid:\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6477,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6593,
+      "length": 18,
+      "value": "\"adid:\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6610,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidManager.swift",
+      "kind": "StringLiteral",
+      "offset": 266,
+      "length": 15,
+      "value": "\"ProfilePassportAdid.PP3AAdidManager\""
+    },
+    {
+      "filePath": "\/Users\/bwp102\/Desktop\/GIT\/ppsdk3_iOS\/ProfilePassportAdid\/ProfilePassportAdid\/Src\/PP3AAdidContext.swift",
+      "kind": "BooleanLiteral",
+      "offset": 789,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

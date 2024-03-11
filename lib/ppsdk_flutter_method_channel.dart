@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -37,11 +39,41 @@ class MethodChannelPpsdkFlutter extends PpsdkFlutterPlatform {
         'setBeaconServiceEnabled', isEnabled);
   }
 
-  Future<void> getBeaconServiceEnabled() async {
-    await methodChannel.invokeMethod<String>('getBeaconServiceEnabled');
+  /// iOS only
+  Future<bool?> getBeaconServiceEnabled() async {
+    if (Platform.isAndroid) return null;
+    return await methodChannel.invokeMethod<bool>('getBeaconServiceEnabled');
   }
 
   Future<String> getPPUID() async {
     return await methodChannel.invokeMethod('getPPUID');
+  }
+
+  Future<bool> registerUserSegment() async {
+    return await methodChannel.invokeMethod('registerUserSegment');
+  }
+
+  Future<String> getUserSegmentWithKey() async {
+    return await methodChannel.invokeMethod('getUserSegmentWithKey');
+  }
+
+  Future<Map<String, dynamic>> getAllUserSegments() async {
+    return await methodChannel.invokeMethod('getAllUserSegments');
+  }
+
+  Future<void> clearAllUserSegment() async {
+    await methodChannel.invokeMethod('clearAllUserSegment');
+  }
+
+  Future<void> setPushMemberId(String pushMemberId) async {
+    await methodChannel.invokeMethod('setPushMemberId', pushMemberId);
+  }
+
+  Future<String?> getPushMemberId() async {
+    return await methodChannel.invokeMethod('getPushMemberId');
+  }
+
+  Future<void> setLogLinkId(String logLinkId) async {
+    await methodChannel.invokeMethod('setLogLinkId', logLinkId);
   }
 }
