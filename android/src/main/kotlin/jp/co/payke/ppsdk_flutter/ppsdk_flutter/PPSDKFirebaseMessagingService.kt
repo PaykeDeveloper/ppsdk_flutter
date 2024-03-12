@@ -1,5 +1,8 @@
 package jp.co.payke.ppsdk_flutter.ppsdk_flutter
 
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.firebase.messaging.RemoteMessage
+
 class PPSDKFirebaseMessagingService : FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {

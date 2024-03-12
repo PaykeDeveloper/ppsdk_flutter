@@ -8,7 +8,7 @@ abstract class PpsdkFlutterPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static PpsdkFlutterPlatform _instance = MethodChannelPpsdkFlutter();
+  static PpsdkFlutterPlatform _instance = MethodChannelPPSDKFlutter();
 
   /// The default instance of [PpsdkFlutterPlatform] to use.
   ///
@@ -23,7 +23,34 @@ abstract class PpsdkFlutterPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
-  }
+  Future<void> startSDK(Map<String, dynamic> option);
+
+  Future<void> serviceStop();
+
+  Future<void> setGeoServiceEnabled(bool isEnabled);
+
+  Future<void> updateLocationAndCheckIn();
+
+  Future<void> setBeaconServiceEnabled(bool isEnabled);
+
+  /// iOS only
+  Future<bool?> getBeaconServiceEnabled();
+
+  Future<String> getPPUID();
+
+  Future<bool> registerUserSegment();
+
+  Future<String> getUserSegmentWithKey();
+
+  Future<Map<String, dynamic>> getAllUserSegments();
+
+  Future<void> clearAllUserSegment();
+
+  Future<void> setPushMemberId(String pushMemberId);
+
+  Future<String?> getPushMemberId();
+
+  Future<void> setLogLinkId(String logLinkId);
+
+  Future<void> showUserInformationDisclosure();
 }

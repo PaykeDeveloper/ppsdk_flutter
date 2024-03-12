@@ -1,4 +1,4 @@
-package jp.co.payke.mobile.ppsdk_flutter
+package jp.co.payke.ppsdk_flutter.ppsdk_flutter
 
 import androidx.annotation.NonNull
 
@@ -60,12 +60,8 @@ class PPSDKFlutterPlugin: FlutterPlugin, MethodCallHandler {
       PPSDKMethods.GETPUSHMEMBERID -> getPushMemberId()
       PPSDKMethods.SETLOGLINKID -> setLogLinkId(call.arguments as String)
       PPSDKMethods.GETDEVICETOKEN -> getDeviceToken()
+      PPSDKMethods.SHOWUSERINFORMATIONDISCLOSURE -> showUserInformationDisclosure()
     }
-    // if (call.method == "getPlatformVersion") {
-    //   result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    // } else {
-    //   result.notImplemented()
-    // }
   }
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {

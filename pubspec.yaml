@@ -38,7 +38,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: jp.co.payke.mobile.ppsdk_flutter
+        package: jp.co.payke.ppsdk_flutter.ppsdk_flutter
         pluginClass: PPSDKFlutterPlugin
       ios:
         pluginClass: PPSDKFlutterPlugin

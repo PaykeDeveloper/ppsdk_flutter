@@ -5,21 +5,21 @@ import ProfilePassportCore
 public class PPSDKFlutterPlugin: NSObject, FlutterPlugin {
 
   enum PPSDKMethods: String {
-    case startPPSDK
-    case serviceStop
-    case setGeoServiceEnabled
-    case updateLocationAndCheckIn
-    case setBeaconServiceEnabled
-    case getBeaconServiceEnabled
-    case getPPUID
-    case registerUserSegment
-    case getUserSegmentWithKey
-    case getAllUserSegments
-    case clearAllUserSegment
-    case setPushMemberId
-    case getPushMemberId
-    case setLogLinkId
-    case showUserInformationDisclosure
+    case startPPSDK = "startPPSDK"
+    case serviceStop = "serviceStop"
+    case setGeoServiceEnabled = "setGeoServiceEnabled"
+    case updateLocationAndCheckIn = "updateLocationAndCheckIn"
+    case setBeaconServiceEnabled = "setBeaconServiceEnabled"
+    case getBeaconServiceEnabled = "getBeaconServiceEnabled"
+    case getPPUID = "getPPUID"
+    case registerUserSegment = "registerUserSegment"
+    case getUserSegmentWithKey = "getUserSegmentWithKey"
+    case getAllUserSegments = "getAllUserSegments"
+    case clearAllUserSegment = "clearAllUserSegment"
+    case setPushMemberId = "setPushMemberId"
+    case getPushMemberId = "getPushMemberId"
+    case setLogLinkId = "setLogLinkId"
+    case showUserInformationDisclosure = "showUserInformationDisclosure"
   }
 
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -126,7 +126,7 @@ extension PPSDKFlutterPlugin : PPBeaconDelegate {
             let tagName = tag.beaconTagName
             let tagEvent = tag.beaconTagEvent
             let tagAtTime = tag.beaconTagAtTime
-            let tagDwelTime = tag.beaconTagDwellTime
+            let tagDwellTime = tag.beaconTagDwellTime
             let tagLastUpdateTime = tag.beaconTagLastUpdateTime
         }
 
@@ -150,9 +150,9 @@ extension PPSDKFlutterPlugin: PPGEODelegate {
         let geoAtTime = geoInfo.geoAtTime
         let geoLastUpdateTime = geoInfo.geoLastUpdateTime
         let geoKind = geoInfo.geoKind
-        let cnterCoordinate = geoInfo.centerCoordinate
+        let centerCoordinate = geoInfo.centerCoordinate
         let geoRadius = geoInfo.geoRadius
-        let apexCoorinates = geoInfo.apexCoordinates
+        let apexCoordinates = geoInfo.apexCoordinates
         let geoTags = geoInfo.geoTags
         
         for tag in geoInfo.geoTags {
@@ -202,7 +202,7 @@ extension PPSDKFlutterPlugin: PPNoticeDelegate {
 }
 
 
-// MARK: - PPSDKManagerに関するメソッド
+// MARK: - 呼び出されるメソッド群
 extension PPSDKFlutterPlugin {
   /// PPSDKを起動する.
   /// - parameter option: 権限周りの設定値.

@@ -1,4 +1,4 @@
-package jp.co.payke.mobile.ppsdk_flutter
+package jp.co.payke.ppsdk_flutter.ppsdk_flutter
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

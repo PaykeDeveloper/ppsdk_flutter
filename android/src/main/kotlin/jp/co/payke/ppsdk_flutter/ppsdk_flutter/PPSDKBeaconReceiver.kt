@@ -1,7 +1,9 @@
 
 package jp.co.payke.mobile.ppsdk_flutter
 
-class PPSDKBeaconReceiver {
+
+
+class PPSDKBeaconReceiver: PPBeaconReceiver() {
     // ビーコン検知イベント受信処理
     // 【引数】
     // context: Context

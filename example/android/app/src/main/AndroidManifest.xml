@@ -29,5 +29,75 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        
+        <!-- ppsdk3 -->
+        <meta-data
+            android:name="ppsdk3_app_auth_key"
+            android:value="@string/ppsdk3_app_auth_key"/>
+
+        <!-- PPNoticeReceiverを継承しているクライアントアプリのクラスを記述 -->
+        <!-- 下記はサンプルアプリのクラス名を使用(要変更) -->
+        <receiver 
+            android:name="jp.co.payke.ppsdk_flutter.ppsdk_flutter.PPSDKNoticeReceiver" 
+            android:exported="false">
+            <intent-filter>
+                <!-- 通知action -->
+                <action android:name="jp.profilepassport.ppsdk3.android.notice.message"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Android12以上でのPush通知クリック処理(URL遷移、クリックログ作成処理)） -->
+        <!-- 通知開封用（外部からの遷移を許可しない） -->
+        <activity
+            android:name=".通知開封時に開くアプリ画面"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jp.co.profilepassport.ppsdk.notice.action.PP_NOTICE_CLICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Firebase メッセージ / ID受信用Service(通知機能を使用したい場合必須) -->
+        <service
+            android:name="jp.co.payke.ppsdk_flutter.ppsdk_flutter.PPSDKFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- キー：ppsdk3_notice_icon -->
+        <!-- 説明：SDK通知のアイコン設定（例：@drawable/ic_noticeicon）-->
+        <meta-data
+            android:name="ppsdk3_notice_icon"
+            android:resource="@drawable/ic_noticeicon"/>
+        
+        <!-- PPSDK通知ラベル -->
+        <!-- android:valueに任意の通知ラベル名を設定 -->
+        <meta-data
+            android:name="ppsdk3_notice_label"
+            android:value="PP3アプリ通知"/>	
+
+        <receiver
+            android:name="jp.co.payke.ppsdk_flutter.ppsdk_flutter.PPSDKGeoReceiver"
+            android:exported="false">
+            <intent-filter>
+                <!-- ジオエリア検知イベント -->
+                <action android:name="jp.profilepassport.android.geo.event"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- PPBeaconReceiverを継承しているクライアントアプリのクラスを記述 -->
+        <!-- "jp.profilepassport.android.beacon.event"＝ビーコン検知イベント -->
+        <!-- 下記はサンプルアプリのクラス名を使用 -->
+        <receiver
+            android:name="jp.co.payke.ppsdk_flutter.ppsdk_flutter.PPSDKBeaconReceiver"
+            android:exported="false">
+            <intent-filter>
+                <!-- ビーコン検知イベント -->
+                <action android:name="jp.profilepassport.android.beacon.event"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>

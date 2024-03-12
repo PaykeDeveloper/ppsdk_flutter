@@ -1,6 +1,7 @@
 package jp.co.payke.mobile.ppsdk_flutter
 
-class PPSDKGeoReceiver {
+
+class PPSDKGeoReceiver : PPGEOReceiver() {
     //ジオ検知イベント受信処理
     //【引数】
     // context: Context?
