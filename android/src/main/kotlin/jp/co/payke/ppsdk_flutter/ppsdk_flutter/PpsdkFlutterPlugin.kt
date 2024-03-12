@@ -1,4 +1,4 @@
-package jp.co.payke.ppsdk_flutter.ppsdk_flutter
+package jp.co.payke.mobile.ppsdk_flutter
 
 import androidx.annotation.NonNull
 
@@ -8,8 +8,8 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
-/** PpsdkFlutterPlugin */
-class PpsdkFlutterPlugin: FlutterPlugin, MethodCallHandler {
+/** PPSDKFlutterPlugin */
+class PPSDKFlutterPlugin: FlutterPlugin, MethodCallHandler {
 
   enum class PPSDKMethods(val method: String) {
     STARTPPSDK("startPPSDK"),
@@ -19,14 +19,14 @@ class PpsdkFlutterPlugin: FlutterPlugin, MethodCallHandler {
     SETBEACONSERVICEENABLED("setBeaconServiceEnabled"),
     //GETBEACONSERVICEENABLED("getBeaconServiceEnabled"),
     GETPPUID("getPPUID"),
-    REGISTERUSERSEGMENT("registerUserSegment")
-    GETUSERSEGMENTWITHKEY("getUserSegmentWithKey")
-    GETALLUSERSEGMENTS("getAllUserSegments")
-    CLEARALLUSERSEGMENT("clearAllUserSegment")
-    SETPUSHMEMBERID("setPushMemberId")
-    GETPUSHMEMBERID("getPushMemberId")
-    SETLOGLINKID("setLogLinkId")
-    GETDEVICETOKEN("getDeviceToken")
+    REGISTERUSERSEGMENT("registerUserSegment"),
+    GETUSERSEGMENTWITHKEY("getUserSegmentWithKey"),
+    GETALLUSERSEGMENTS("getAllUserSegments"),
+    CLEARALLUSERSEGMENT("clearAllUserSegment"),
+    SETPUSHMEMBERID("setPushMemberId"),
+    GETPUSHMEMBERID("getPushMemberId"),
+    SETLOGLINKID("setLogLinkId"),
+    GETDEVICETOKEN("getDeviceToken"),
     SHOWUSERINFORMATIONDISCLOSURE("showUserInformationDisclosure")
   }
 
@@ -52,7 +52,7 @@ class PpsdkFlutterPlugin: FlutterPlugin, MethodCallHandler {
       PPSDKMethods.SETBEACONSERVICEENABLED -> setBeaconServiceEnabled(call.arguments as Boolean)
       //PPSDKMethods.GETBEACONSERVICEENABLED -> getBeaconServiceEnabled()
       PPSDKMethods.GETPPUID -> getPPUID()
-      PPSDKMethods.REGISTERUSERSEGMENT -> registerUserSegment(call.arguments as String, call.arguments as String)
+      PPSDKMethods.REGISTERUSERSEGMENT -> registerUserSegment(call.arguments["key"] as String, call.arguments["value"] as String)
       PPSDKMethods.GETUSERSEGMENTWITHKEY -> getUserSegmentWithKey(call.arguments as String)
       PPSDKMethods.GETALLUSERSEGMENTS -> getAllUserSegments()
       PPSDKMethods.CLEARALLUSERSEGMENT -> clearAllUserSegment()

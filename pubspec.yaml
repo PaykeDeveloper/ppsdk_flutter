@@ -1,11 +1,12 @@
 name: ppsdk_flutter
 description: "Profile Passportのプラグイン。"
 version: 0.0.1
-homepage:
+homepage: https://github.com/PaykeDeveloper/ppsdk_flutter
+repository: https://github.com/PaykeDeveloper/ppsdk_flutter
 
 environment:
-  sdk: '>=3.2.6 <4.0.0'
-  flutter: '>=3.3.0'
+  sdk: ">=3.2.6 <4.0.0"
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:
@@ -37,10 +38,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: jp.co.payke.ppsdk_flutter.ppsdk_flutter
-        pluginClass: PpsdkFlutterPlugin
+        package: jp.co.payke.mobile.ppsdk_flutter
+        pluginClass: PPSDKFlutterPlugin
       ios:
-        pluginClass: PpsdkFlutterPlugin
+        pluginClass: PPSDKFlutterPlugin
       web:
         pluginClass: PpsdkFlutterWeb
         fileName: ppsdk_flutter_web.dart

@@ -1,16 +1,22 @@
-group 'jp.co.payke.ppsdk_flutter.ppsdk_flutter'
+group 'jp.co.payke.mobile.ppsdk_flutter'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.9.0'
     repositories {
         google()
         mavenCentral()
+        // R8リポジトリ指定
+        maven {
+            url 'https://storage.googleapis.com/r8-releases/raw'
+        }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath 'com.android.tools.build:gradle:8.0.2'
+        classpath 'com.android.tools:r8:8.0.40'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
@@ -26,7 +32,7 @@ apply plugin: 'kotlin-android'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'jp.co.payke.ppsdk_flutter.ppsdk_flutter'
+        namespace 'jp.co.payke.mobile.ppsdk_flutter'
     }
 
     compileSdkVersion 33

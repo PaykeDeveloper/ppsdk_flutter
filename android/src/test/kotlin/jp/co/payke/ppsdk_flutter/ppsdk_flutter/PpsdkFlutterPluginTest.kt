@@ -1,4 +1,4 @@
-package jp.co.payke.ppsdk_flutter.ppsdk_flutter
+package jp.co.payke.mobile.ppsdk_flutter
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -16,7 +16,7 @@ import org.mockito.Mockito
 internal class PpsdkFlutterPluginTest {
   @Test
   fun onMethodCall_getPlatformVersion_returnsExpectedValue() {
-    val plugin = PpsdkFlutterPlugin()
+    val plugin = PPSDKFlutterPlugin()
 
     val call = MethodCall("getPlatformVersion", null)
     val mockResult: MethodChannel.Result = Mockito.mock(MethodChannel.Result::class.java)
