@@ -24,6 +24,9 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs project(':ppsdk_flutter').file('libs')
+        }
     }
 }
 
@@ -71,4 +74,14 @@ android {
             }
         }
     }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    // libsフォルダーに存在するaarファイルをインポート
+    implementation(name: 'ProfilePassportADID_Release_PRO_3.7.0', ext: 'aar')
+    implementation(name: 'ProfilePassportBeacon_Release_PRO_3.7.0', ext: 'aar')
+    implementation(name: 'ProfilePassportCore_Release_PRO_3.7.0', ext: 'aar')
+    implementation(name: 'ProfilePassportGeofence_Release_PRO_3.7.0', ext: 'aar')
+    implementation(name: 'ProfilePassportNotice_Release_PRO_3.7.0', ext: 'aar')
 }

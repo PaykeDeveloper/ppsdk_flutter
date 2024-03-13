@@ -64,4 +64,7 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    // ppsdk_flutterに必要なライブラリはここでimportされる
+    implementation project(':ppsdk_flutter')
+}

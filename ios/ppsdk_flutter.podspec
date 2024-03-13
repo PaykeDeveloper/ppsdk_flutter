@@ -21,7 +21,16 @@ Profile Passportのプラグイン。
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
 
-  s.preserve_paths = 'PPSDKFrameworks/ProfilePassportAdid.xcframework', 'PPSDKFrameworks/ProfilePassportBeacon.xcframework', 'PPSDKFrameworks/ProfilePassportCore.xcframework', 'PPSDKFrameworks/ProfilePassportGeofence.xcframework', 'PPSDKFrameworks/ProfilePassportNotice.xcframework'
-  s.xcconfig = { 'OTHER_LDFLAGS' => '-framework ProfilePassportAdid -framework ProfilePassportBeacon -framework ProfilePassportCore -framework ProfilePassportGeofence -framework ProfilePassportNotice' }
+  # iOS標準ライブラリ
+  # libswiftCoreGraphics.tbdとlibsqlite3.0.tbdはプロジェクトに追加する必要がある
+  s.ios.framework = 'UserNotifications'
+  s.ios.framework = 'AdSupport'
+  s.ios.framework = 'CoreTelephony'
+  s.ios.framework = 'CoreLocation'
+  s.ios.framework = 'CoreMotion'
+  s.ios.framework = 'SystemConfiguration'
+  s.ios.framework = 'AppTrackingTransparency'
+
+  # Profile Passport系のライブラリをここで追加
   s.vendored_frameworks = 'ProfilePassportAdid.xcframework', 'ProfilePassportBeacon.xcframework', 'ProfilePassportCore.xcframework', 'ProfilePassportGeofence.xcframework', 'ProfilePassportNotice.xcframework'
 end
