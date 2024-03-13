@@ -1,11 +1,11 @@
 import UIKit
 import Flutter
 
-//PPSDK機能
+// PPSDK機能
 import ProfilePassportCore
-//通知機能(通知機能を利用しない場合は必要なし)
+// 通知機能(通知機能を利用しない場合は必要なし)
 import ProfilePassportNotice
-//ビーコン機能(ビーコン機能を利用しない場合は必要なし)
+// ビーコン機能(ビーコン機能を利用しない場合は必要なし)
 import ProfilePassportBeacon
 
 @UIApplicationMain
@@ -38,7 +38,7 @@ import ProfilePassportBeacon
     }
     
     /// サイレントプッシュ受信.
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    override func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
         // ジオエリアインサイド検知
         PPNoticeManager.shared.didReceiveRemoteNotification(userInfo) { (code, message) in
@@ -49,7 +49,6 @@ import ProfilePassportBeacon
             }
             completionHandler(.newData)
         }
-        
     }
     
     override func userNotificationCenter(
