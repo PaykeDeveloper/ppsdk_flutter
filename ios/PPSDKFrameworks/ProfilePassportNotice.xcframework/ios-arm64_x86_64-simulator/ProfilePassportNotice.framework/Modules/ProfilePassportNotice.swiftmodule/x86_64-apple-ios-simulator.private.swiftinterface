@@ -1,0 +1,155 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ProfilePassportNotice
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import Foundation
+import ProfilePassportCore
+@_exported import ProfilePassportNotice
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct PP3NAppNoticeFrequencyEntity {
+  public let statuCode: Swift.Int
+  public let maxNoticeCount: Swift.Int?
+  public let ngTimeStart: Swift.String?
+  public let ngTimeEnd: Swift.String?
+  public let userPushIntervalTime: Swift.Int?
+  public let pushLimit: Swift.Int?
+  public let pushInterval: Swift.Int?
+}
+public protocol PP3NAppFrequencyAccessorIF {
+  func setAppFrequency(frequency: Foundation.Data, time: Swift.Int64) -> Swift.Bool
+  func getAppFrequency() -> ProfilePassportNotice.PP3NAppNoticeFrequencyEntity?
+  func getAppFrequencyTime() -> Swift.Int64?
+}
+public struct PP3NNoticeS3FilePathEntity {
+  public let noticeS3FilePath: Swift.String
+  public var lastUpdateTime: Swift.String
+}
+public protocol PP3NNoticeStateAccessorIF {
+  func getNoticeState() -> Swift.Bool
+}
+public struct PP3NFrequencyCheckResult {
+}
+public struct PP3NNoticeDBEntity {
+  public let noticeId: Swift.Int?
+  public let created: Swift.String
+  public let noticeData: Swift.String
+  public let noticeS3FilePath: Swift.String
+  public let lastUpdateTime: Swift.String
+}
+@objc public protocol PPNoticeDelegate : ProfilePassportCore.PPSDKDelegate {
+  @objc optional func noticeWillPush(notice: ProfilePassportNotice.PPNotice) -> Swift.Bool
+  @objc optional func noticeDidClick(notice: ProfilePassportNotice.PPNotice) -> Swift.Bool
+}
+public protocol PP3NNoticeContextIF : ProfilePassportCore.PP3CLibraryContextIF {
+  var notificationProcManager: (any ProfilePassportNotice.PP3NNotificationProcManagerIF)! { get set }
+  var noticeResourceManager: (any ProfilePassportNotice.PP3NNoticeResourceManagerIF)! { get set }
+  var frequencyController: (any ProfilePassportNotice.PP3NFrequencyControllerIF)! { get set }
+  var noticeLogGenerator: (any ProfilePassportNotice.PP3NNoticeLogGeneratorIF)! { get set }
+  var noticeDBAccessor: (any ProfilePassportNotice.PP3NNoticeDBAccessorIF)! { get set }
+  var noticeEventDBAccessor: (any ProfilePassportNotice.PP3NNoticeEventDBAccessorIF)! { get set }
+  var noticeStateAccessor: (any ProfilePassportNotice.PP3NNoticeStateAccessorIF)! { get set }
+  var noticeUserInfoAccessor: (any ProfilePassportNotice.PP3NNoticeUserInfoAccessorIF)! { get set }
+  var appFrequencyAccessor: (any ProfilePassportNotice.PP3NAppFrequencyAccessorIF)! { get set }
+}
+public struct PP3NNoticeFrequency : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol PP3NNoticeResourceManagerIF {
+  func updateState(sdkThread: ProfilePassportCore.PP3CSDKQueue)
+}
+public struct PP3NUserInfoEntity {
+  public let statusCode: Swift.Int
+  public let createTime: Swift.Int64
+  public let work: [Swift.String]
+  public let home: [Swift.String]
+  public let other: [Swift.String]
+  public let memberGroupId: [Swift.String]
+}
+public struct PP3NPermissionResult {
+}
+public struct PP3NPublishDateResult {
+}
+public struct PP3NConditionsResult {
+}
+public protocol PP3NFrequencyControllerIF {
+  func updateState(sdkThread: ProfilePassportCore.PP3CSDKQueue)
+  func checkAppFrequency(noticeId: Swift.Int, noticeDate: Foundation.Date) -> ProfilePassportNotice.PP3NFrequencyCheckResult
+  func checkNoticeFrequency(noticeId: Swift.Int, noticeDate: Foundation.Date, frequency: ProfilePassportNotice.PP3NNoticeFrequency) -> ProfilePassportNotice.PP3NFrequencyCheckResult
+}
+public struct PP3NNoticeEventDBEntity {
+}
+@_inheritsConvenienceInitializers @objc final public class PPNoticeManager : ObjectiveC.NSObject {
+  @objc public static let shared: ProfilePassportNotice.PPNoticeManager
+  @objc public enum CallBackResult : Swift.Int {
+    case success = 0
+    case failure = -1
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @discardableResult
+  @objc final public func willPresent(_ notification: UserNotifications.UNNotification) -> Swift.Bool
+  @discardableResult
+  @objc final public func didReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any], callback: @escaping (_ result: ProfilePassportNotice.PPNoticeManager.CallBackResult, _ errorMessage: Swift.String?) -> Swift.Void) -> Swift.Bool
+  @objc final public func didRegisterForDeviceToken(_ deviceToken: Foundation.Data)
+  @objc final public func didFailToRegisterForRemoteNotifications(_ error: any Swift.Error)
+  @discardableResult
+  @objc final public func didReceive(_ response: UserNotifications.UNNotificationResponse) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class PPNotice : ObjectiveC.NSObject {
+  @objc final public var id: Swift.Int
+  @objc final public var title: Swift.String?
+  @objc final public var message: Swift.String?
+  @objc final public var url: Swift.String?
+  @objc final public var data: Swift.String?
+  @objc final public var pushStart: Foundation.Date?
+  @objc final public var pushEnd: Foundation.Date?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol PP3NNoticeLogGeneratorIF {
+  func updateState(sdkThread: ProfilePassportCore.PP3CSDKQueue)
+  func createNoticeImpLog(noticeData: Foundation.Data, appFqCheckResult: ProfilePassportNotice.PP3NFrequencyCheckResult?, noticeFqCheckResult: ProfilePassportNotice.PP3NFrequencyCheckResult?, trigger: Foundation.Data?, callbackBeforePush: Foundation.Data?)
+  func createNoticeClickLog(noticeData: Foundation.Data, trigger: Foundation.Data?, callbackAfterPush: Foundation.Data?)
+  func createNoticeBlockLog(noticeData: Foundation.Data, appFqCheckResult: ProfilePassportNotice.PP3NFrequencyCheckResult?, noticeFqCheckResult: ProfilePassportNotice.PP3NFrequencyCheckResult?, trigger: Foundation.Data?, callbackBeforePush: Foundation.Data?, permissionResult: ProfilePassportNotice.PP3NPermissionResult?, publishDateResult: ProfilePassportNotice.PP3NPublishDateResult?, conditionsResult: ProfilePassportNotice.PP3NConditionsResult?, reason: Swift.String)
+}
+public protocol PP3NNoticeUserInfoAccessorIF {
+  func setUserInfo(userInfoData: Foundation.Data) -> Swift.Bool
+  func getUserInfo() -> ProfilePassportNotice.PP3NUserInfoEntity?
+}
+public protocol PP3NNoticeEventDBAccessorIF {
+  func registerNoticeEventData(noticeEventData: ProfilePassportNotice.PP3NNoticeEventDBEntity) -> Swift.Int64
+  func countNoticeEventData(noticeID: Swift.Int?, noticeAction: Swift.String?, startDate: Swift.String?) -> Swift.Int?
+  func getLastNoticeEventData(noticeID: Swift.Int?, noticeAction: Swift.String?, startDate: Swift.String?) -> ProfilePassportNotice.PP3NNoticeEventDBEntity?
+  func deleteNoticeEventDataBeforeTime(time: Swift.String) -> Swift.Bool
+  func deleteNoticeEventDataByNoticeIDList(noticeIDList: [Swift.Int]) -> Swift.Bool
+  func getNoticeEventDataList(limit: Swift.Int) -> [ProfilePassportNotice.PP3NNoticeEventDBEntity]?
+}
+public protocol PP3NNotificationProcManagerIF {
+  func updateState(sdkThread: ProfilePassportCore.PP3CSDKQueue)
+  func willPresent(_ userInfo: [Swift.AnyHashable : Any])
+  func didReceiveRemoteNotification(_ userInfo: [Swift.AnyHashable : Any], callback: @escaping (_ result: ProfilePassportNotice.PPNoticeManager.CallBackResult, _ errorMessage: Swift.String?) -> Swift.Void)
+}
+public protocol PP3NNoticeDBAccessorIF {
+  func registerNoticeData(noticeData: ProfilePassportNotice.PP3NNoticeDBEntity) -> Swift.Int64?
+  func getNoticeDataByNoticeID(noticeID: Swift.Int) -> ProfilePassportNotice.PP3NNoticeDBEntity?
+  func getNoticeS3FilePathDataList(notIncludeStart: Swift.String?, limit: Swift.Int) -> [ProfilePassportNotice.PP3NNoticeS3FilePathEntity]?
+  func deleteNoticeDataByNoticeS3FilePath(noticeS3FilePath: Swift.String) -> Swift.Bool
+  func countNoticeData() -> Swift.Int?
+  func getNoticeDataList(limit: Swift.Int) -> [ProfilePassportNotice.PP3NNoticeDBEntity]?
+  func deleteNoticeDataBeforeTime(time: Swift.String) -> Swift.Bool
+}
+extension ProfilePassportNotice.PPNoticeManager.CallBackResult : Swift.Equatable {}
+extension ProfilePassportNotice.PPNoticeManager.CallBackResult : Swift.Hashable {}
+extension ProfilePassportNotice.PPNoticeManager.CallBackResult : Swift.RawRepresentable {}

@@ -49,5 +49,7 @@
 	<string>Explaination for location</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>test</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 </dict>
 </plist>

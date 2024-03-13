@@ -1,6 +1,11 @@
 import Flutter
 import UIKit
+// PPSDK機能
 import ProfilePassportCore
+// 通知機能(通知機能を利用しない場合は必要なし)
+import ProfilePassportNotice
+// ビーコン機能(ビーコン機能を利用しない場合は必要なし)
+import ProfilePassportBeacon
 
 public class PPSDKFlutterPlugin: NSObject, FlutterPlugin {
 

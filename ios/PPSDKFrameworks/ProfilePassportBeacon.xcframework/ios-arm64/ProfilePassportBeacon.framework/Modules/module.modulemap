@@ -1,0 +1,11 @@
+framework module ProfilePassportBeacon {
+  umbrella header "ProfilePassportBeacon.h"
+  export *
+
+  module * { export * }
+}
+
+module ProfilePassportBeacon.Swift {
+  header "ProfilePassportBeacon-Swift.h"
+  requires objc
+}

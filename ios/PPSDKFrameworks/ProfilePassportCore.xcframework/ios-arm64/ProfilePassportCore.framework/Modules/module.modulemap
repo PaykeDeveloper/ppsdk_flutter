@@ -1,0 +1,13 @@
+framework module ProfilePassportCore {
+    umbrella header "GRDB.h"
+    
+    export *
+    module * { export * }
+    
+    header "grdb_config.h"
+}
+
+module ProfilePassportCore.Swift {
+  header "ProfilePassportCore-Swift.h"
+  requires objc
+}
