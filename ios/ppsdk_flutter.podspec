@@ -23,14 +23,14 @@ Profile Passportのプラグイン。
 
   # iOS標準ライブラリ
   # libswiftCoreGraphics.tbdとlibsqlite3.0.tbdはプロジェクトに追加する必要がある
-  s.ios.framework = 'UserNotifications'
-  s.ios.framework = 'AdSupport'
-  s.ios.framework = 'CoreTelephony'
-  s.ios.framework = 'CoreLocation'
-  s.ios.framework = 'CoreMotion'
-  s.ios.framework = 'SystemConfiguration'
-  s.ios.framework = 'AppTrackingTransparency'
+  # s.ios.framework = 'UserNotifications'
+  # s.ios.framework = 'AdSupport'
+  # s.ios.framework = 'CoreTelephony'
+  # s.ios.framework = 'CoreLocation'
+  # s.ios.framework = 'CoreMotion'
+  # s.ios.framework = 'SystemConfiguration'
+  # s.ios.framework = 'AppTrackingTransparency'
 
   # Profile Passport系のライブラリをここで追加
-  s.vendored_frameworks = 'ProfilePassportAdid.xcframework', 'ProfilePassportBeacon.xcframework', 'ProfilePassportCore.xcframework', 'ProfilePassportGeofence.xcframework', 'ProfilePassportNotice.xcframework'
+  s.vendored_frameworks = 'ProfilePassportCore.xcframework'
 end

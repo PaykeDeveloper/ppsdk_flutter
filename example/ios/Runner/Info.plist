@@ -51,5 +51,7 @@
 	<string>test</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>ppsdk3_app_auth_key</key>
+	<string>$(YOUR_APP_AUTH_KEY)</string>
 </dict>
 </plist>

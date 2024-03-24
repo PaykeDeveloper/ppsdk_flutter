@@ -1,0 +1,11 @@
+framework module ProfilePassportAdid {
+  umbrella header "ProfilePassportAdid.h"
+  export *
+
+  module * { export * }
+}
+
+module ProfilePassportAdid.Swift {
+  header "ProfilePassportAdid-Swift.h"
+  requires objc
+}

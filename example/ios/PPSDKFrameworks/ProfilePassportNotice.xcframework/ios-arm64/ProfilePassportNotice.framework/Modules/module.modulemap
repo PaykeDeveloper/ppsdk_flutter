@@ -1,0 +1,11 @@
+framework module ProfilePassportNotice {
+  umbrella header "ProfilePassportNotice.h"
+  export *
+
+  module * { export * }
+}
+
+module ProfilePassportNotice.Swift {
+  header "ProfilePassportNotice-Swift.h"
+  requires objc
+}
